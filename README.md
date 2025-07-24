@@ -60,5 +60,7 @@ Steps:
 
 ```cd mysql```
 ```kubectl apply -f .```
+```kubectl exec -it mysql-0 -- mysql -u root -p mysql``` - password123 by default change in mysql-secret with encode64
 
 3. deploy book service
+

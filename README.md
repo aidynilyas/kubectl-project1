@@ -63,4 +63,18 @@ Steps:
 ```kubectl exec -it mysql-0 -- mysql -u root -p mysql``` - password123 by default change in mysql-secret with encode64
 
 3. deploy book service
+- For this one I created a simple mock (using flask python) book-service container image and pushed it to my docker hub (5upreme/book-service)
 
+```cd book-service```
+```kubectl apply -f .```
+
+to test:
+```
+kubectl run debug --rm -it --image=curlimages/curl --restart=Never -- sh
+
+# Inside:
+curl http://book-service.default.svc.cluster.local
+curl http://book-service.default.svc.cluster.local/health
+```
+
+4. 

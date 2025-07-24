@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: book-service
-        image: nginx
+        image: 5upreme/book-service:latest
         ports:
         - containerPort: 5000
         env:

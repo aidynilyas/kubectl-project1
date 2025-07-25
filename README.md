@@ -70,11 +70,14 @@ Steps:
 
 to test:
 ```
-kubectl run debug --rm -it --image=curlimages/curl --restart=Never -- sh
+kubectl run debug --rm -it --image=curlimages/curl -- sh
 
 # Inside:
 curl http://book-service.default.svc.cluster.local
 curl http://book-service.default.svc.cluster.local/health
 ```
 
-4. 
+4. deploy api-gateway, frontend & ingress
+- containerize the api-gateway, frontend & apply the yamls
+- enable ingress in the minikube (if this one doesn't install the nginx ingress controller, go to ingress and execute the .sh script), make sure the ip is right in /etc/hosts (don't forget to minikube tunnel)
+- 

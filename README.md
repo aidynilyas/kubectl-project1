@@ -80,4 +80,7 @@ curl http://book-service.default.svc.cluster.local/health
 4. deploy api-gateway, frontend & ingress
 - containerize the api-gateway, frontend & apply the yamls
 - enable ingress in the minikube (if this one doesn't install the nginx ingress controller, go to ingress and execute the .sh script), make sure the ip is right in /etc/hosts (don't forget to minikube tunnel)
-- 
+
+
+PROGRESS UPDATE:
+I am separating the docker-mock-app to another repo, to practice Github actions, the best practice for the pipeline, linting, testing and etc.

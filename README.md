@@ -84,3 +84,5 @@ curl http://book-service.default.svc.cluster.local/health
 
 PROGRESS UPDATE:
 I am separating the docker-mock-app to another repo, to practice Github actions, the best practice for the pipeline, linting, testing and etc.
+
+Separating front-end & api-gateway. Will add the rollbacks, updates and etc to the kubectl soon.
